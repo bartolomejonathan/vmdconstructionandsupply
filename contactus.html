@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VMD Construction and Supply</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome Icons (for email icon) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+<style>
+.banner {
+    position: relative;
+    text-align: center;
+    margin-top: 60px; /* Adjust the margin as needed to avoid overlapping with the navbar */
+    background-color: #f8f9fa; /* Optional background color for the banner */
+    padding: 20px 0; /* Adjust padding as needed */
+}
+
+.banner img {
+    max-width: 100%; /* Ensure the image resizes proportionally to fit its container */
+    height: 60rem; /* Maintain aspect ratio */
+    display: block; /* Ensure the image is treated as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; /* Text color */
+    text-align: center;
+    z-index: 10; /* Ensure text is above the image */
+    width: 100%; /* Full width of parent container */
+    padding: 20px; /* Padding for text */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background color */
+}
+
+.banner-text h2 {
+    font-size: 3rem; /* Adjust font size as needed */
+    margin-bottom: 10px; /* Optional margin */
+}
+
+.banner-text p {
+    font-size: 1.5rem; /* Adjust font size as needed */
+    margin-bottom: 0; /* Remove default margin */
+}
+.banner {
+    position: relative;
+    height: 300px; /* Adjust height as needed */
+    background-image: url('../images/contactH.png'); /* Replace with your banner image path */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #ffffff; /* Text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Ensure items stack vertically */
+    padding: 20px; /* Padding around content */
+}
+.banner-text {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    padding: 10px 20px; /* Padding inside text */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.map-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 ratio */
+    height: 0;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+.contact-section {
+    width: 50%;
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3rem 1rem;
+  }
+  
+  .contact-intro > * + * {
+    margin-top: 1rem;
+  }
+  
+  .contact-title {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+  }
+  
+  .contact-description {
+    color: rgb(107 114 128);
+  }
+  
+  .form-group-container {
+    display: grid;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-label {
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-input,
+  .form-textarea {
+    padding: 0.5rem;
+    border: 1px solid #e5e7eb;
+    display: flex;
+    height: 2.5rem;
+    width: 100%;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  
+  .form-input::placeholder,
+  .form-textarea:focus-visible {
+    color: #6b7280;
+  }
+  
+  .form-input:focus-visible,
+  .form-textarea:focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+  }
+  
+  .form-textarea {
+    min-height: 120px;
+  }
+  
+  .form-submit {
+    width: 100%;
+    margin-top: 1.2rem;
+    background-color: RGB(223, 1, 0);
+    color: #fff;
+    padding: 13px 5px;
+    border-radius: 0.375rem;
+    cursor: pointer;
+  }
+  .form-submit:hover {
+  background-color:  RGB(255, 226, 44);
+  color: black;
+}
+
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../images/logo.png" alt="Logo" style="max-width: 80px;">
+            </a>
+            <span class="company-name">VMD Construction and Supply</span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <a href="contactus.php" class="btn btn-get-in-touch ml-3">Get in Touch</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Contact</a>
+                    </li>
+                </ul>
+                <p class="navbar-text ml-5">
+                    <span style="color: RGB(223, 1, 0);"><i class="fas fa-envelope"></i> <a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=vmd.hrdep@gmail.com&tf=1" target="_blank">VMD Email</a></span>
+                    <span class="ml-3 mr-3">|</span>
+                    <span style="color: rgb(55, 0, 255);"> <i class="fab fa-facebook-square"></i> <a href="https://www.facebook.com/profile.php?id=61561906963834" target="_blank">VMD Facebook</a></span>
+                </p>
+                
+            </div>
+        </div>
+    </nav>
+
+<header class="banner">
+        <div class="overlay"></div> <!-- Optional overlay -->
+        <div class="container">
+            <div class ="banner-text">
+            <h1 class="display-4">Contact Us</h1> <!-- Display-4 for large heading -->
+            <p class="lead ">Your trusted partner in construction services. Feel free to reach out to us for any inquiries or to discuss your project needs. Our team at VMD Construction and Supply is here to assist you every step of the way. </p> <!-- Lead class for larger, bold text -->
+        </div>
+        </div>
+</header>
+<div class="container mt-5">
+    <h2><span style="color: red;"> VMD Construction and Supply </span>location</h2>
+    <div class="row">
+        <div class="col-md-12 map-container">
+            <!-- Google Maps Embed Code -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.205239265532!2d120.9790315759055!3d14.700982474609537!2m3!
+                1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b3fb816a3283%3A0xa38f1838d876b8d5!2s184%20Maysan%20Rd%2C%20Valenzuela%2C%20Metr
+                 o%20Manila!5e0!3m2!1sen!2sph!4v1720418833752!5m2!1sen!2sph" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            </iframe>
+        </div>
+    </div>
+</div>
+    
+<div class="container mt-5 pt-5">
+    <h1 class="custom-title"><span style="color: red;">Contact</span> Us</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">Our Open Hours</h2>
+                        <table class="table table-bordered custom-table">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>Day</th>
+                                    <th>Morning</th>
+                                    <th>Afternoon</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Monday</td>
+                                    <td>8:00 AM - 12:00 PM</td>
+                                    <td>1:00 PM - 5:00 PM </td>
+                                </tr>
+                                <tr>
+                                    <td>Tuesday</td>
+                                    <td>8:00 AM - 12:00 PM</td>
+                                    <td>1:00 PM - 5:00 PM </td>
+                                </tr>
+                                <tr>
+                                    <td>Wednesday</td>
+                                    <td>8:00 AM - 12:00 PM</td>
+                                    <td>1:00 PM - 5:00 PM </td>
+                                </tr>
+                                <tr>
+                                    <td>Thursday</td>
+                                    <td>8:00 AM - 12:00 PM</td>
+                                    <td>1:00 PM - 5:00 PM </td>
+                                </tr>
+                                <tr>
+                                    <td>Friday</td>
+                                    <td>8:00 AM - 12:00 PM</td>
+                                    <td>1:00 PM - 5:00 PM </td>
+                                </tr>
+                                <tr>
+                                    <td>Saturday</td>
+                                    <td>Closed</td>
+                                    <td>Closed</td>
+                                </tr>
+                                <tr>
+                                    <td>Sunday</td>
+                                    <td>Closed</td>
+                                    <td>Closed</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        <section class="contact-section">
+        <div class="contact-intro">
+          <h2 class="contact-title">Send Us Message</h2>
+          <p class="contact-description">
+            Fill out the form below and we'll get back to you as soon as possible.
+          </p>
+        </div>
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST" target="_blank">
+      
+          <input type="hidden" name="access_key" value="8a16db97-b178-4107-84b5-64fd7a5a6219"  />
+          <input type="hidden" name="subject" value="New Contact Form Submission from VMD Construction and Supply. Warning: Click the exact email to direct message." />
+          <input type="hidden" name="from_name" value="VMD Construction and Supply" />
+          <!-- More customization options available in the docs: https://docs.web3forms.com -->
+      
+          <div class="form-group-container">
+            <div class="form-group">
+              <label for="name" class="form-label">Name</label>
+              <input id="name" name="name" class="form-input" placeholder="Your name" type="text" />
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input id="email" name="email" class="form-input" placeholder="Your email" type="email" />
+            </div>
+            <div class="form-group">
+              <label for="phone" class="form-label">Phone</label>
+              <input id="phone" name="phone" class="form-input" placeholder="Phone Number" type="text" />
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-textarea" id="message" name="message" placeholder="Your message"></textarea>
+            </div>
+          </div>
+          <button class="form-submit" type="submit">Send Message</button>
+        </form>
+      
+      </section>
+        </div>
+</div>
+<footer class="footer bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>
+                        <span style="color: white;"><i class="fas fa-location-arrow"></i></span><a href="contactus.php">
+                        184-186 Maysan Road, Maysan,<br> Valenzuela City</a><br>
+                        <span style="color: blue;"><i class="fas fa-phone"></i></span>
+                        Phone: +02 84 0482 91 | Mobile Number: +63 960 6543 588 <br>
+                        <span style="color: RGB(223, 1, 0)"><i class="fas fa-envelope"></i></span>
+                        Email: <a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=vmd.hrdep@gmail.com&tf=1" target="_blank">vmd.hrdep@gmail.com</a>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61561906963834" target="_blank"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Explore our other official website</h5>
+                    <p> Click the link below:</p>
+                    <p><a href="http://localhost/Gravelandsand/" target="_blank">Maysan Providence Grave and Sand</a></p>
+        </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTopBtn"><i class="fas fa-arrow-up"></i></button>
+<!-- Font Awesome JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+<!-- Bootstrap JS and jQuery (for navbar toggle and carousel) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+<script>
+     window.onload = function() {
+        // Reset the form fields when the page loads
+        document.getElementById("form").reset();
+    };
+    </script>
+
+</body>
+</html>

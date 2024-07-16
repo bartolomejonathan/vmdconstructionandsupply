@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VMD Construction and Supply</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome Icons (for email icon) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style> 
+.banner {
+    position: relative;
+    text-align: center;
+    margin-top: 60px; /* Adjust the margin as needed to avoid overlapping with the navbar */
+    background-color: #f8f9fa; /* Optional background color for the banner */
+    padding: 20px 0; /* Adjust padding as needed */
+}
+
+.banner img {
+    max-width: 100%; /* Ensure the image resizes proportionally to fit its container */
+    height: 60rem; /* Maintain aspect ratio */
+    display: block; /* Ensure the image is treated as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; /* Text color */
+    text-align: center;
+    z-index: 10; /* Ensure text is above the image */
+    width: 100%; /* Full width of parent container */
+    padding: 20px; /* Padding for text */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background color */
+}
+
+.banner-text h2 {
+    font-size: 3rem; /* Adjust font size as needed */
+    margin-bottom: 10px; /* Optional margin */
+}
+
+.banner-text p {
+    font-size: 1.5rem; /* Adjust font size as needed */
+    margin-bottom: 0; /* Remove default margin */
+}
+.banner {
+    position: relative;
+    height: 300px; /* Adjust height as needed */
+    background-image: url('../images/aboutH.jpg'); /* Replace with your banner image path */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #ffffff; /* Text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Ensure items stack vertically */
+    padding: 20px; /* Padding around content */
+}
+.banner-text {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    padding: 10px 20px; /* Padding inside text */
+    border-radius: 10px; /* Rounded corners */
+}
+.company-background {
+    padding: 40px 0; /* Padding for spacing */
+    background-color: #f8f9fa; /* Background color for the section */
+    text-align: center;
+}
+
+.company-background h3 {
+    font-size: 2rem; /* Adjust font size as needed */
+    margin-bottom: 20px; /* Margin for spacing */
+}
+
+.company-background p {
+    font-size: 1.4rem; /* Adjust font size as needed */
+    margin-bottom: 20px; /* Margin for spacing */
+}
+.mission-vision-section {
+    padding: 40px 0; /* Padding for spacing */
+    background-color: #f8f9fa; /* Background color for the section */
+    text-align: center;
+}
+
+.mission-vision-section h3 {
+    font-size: 2rem; /* Adjust font size as needed */
+    margin-bottom: 10px; /* Optional margin */
+}
+
+.mission-vision-section p {
+    font-size: 1.4rem; /* Adjust font size as needed */
+    margin-bottom: 20px; /* Adjust margin */
+}
+
+.core-title{
+    font-size: 50px;
+}
+
+.team-member {
+    position: relative;
+    margin-bottom: 30px;
+}
+.team-member img {
+    border-radius: 5%;
+    width: 169px;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.team-member:hover img {
+    transform: scale(1.1);
+}
+.hover-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: RGB(223, 1, 0);
+    background-color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.team-member:hover .hover-title {
+    opacity: 1;
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../images/logo.png" alt="Logo" style="max-width: 80px;">
+            </a>
+            <span class="company-name">VMD Construction and Supply</span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <a href="contactus.php" class="btn btn-get-in-touch ml-3">Get in Touch</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact</a>
+                    </li>
+                </ul>
+                <p class="navbar-text ml-5">
+                    <span style="color: RGB(223, 1, 0);"><i class="fas fa-envelope"></i> <a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=vmd.hrdep@gmail.com&tf=1" target="_blank">VMD Email</a></span>
+                    <span class="ml-3 mr-3">|</span>
+                    <span style="color: rgb(55, 0, 255);"> <i class="fab fa-facebook-square"></i> <a href="https://www.facebook.com/profile.php?id=61561906963834" target="_blank">VMD Facebook</a></span>
+                </p>
+                
+            </div>
+        </div>
+    </nav>
+    <!-- Image Banner Section -->
+    <header class="banner">
+        <div class="overlay"></div> <!-- Optional overlay -->
+        <div class="container">
+            <div class ="banner-text">
+            <h1 class="display-4">About Us</h1> <!-- Display-4 for large heading -->
+            <p class="lead ">At VMD Construction and Supply, we are dedicated to providing top-quality construction services and supply solutions. With years of experience in the industry, we have established ourselves as a trusted partner </p> <!-- Lead class for larger, bold text -->
+        </div>
+        </div>
+    </header>
+    <section class="company-background">
+        <div class="container">
+            <h3><span style="color:  RGB(223, 1, 0);">Company</span> Background</h3>
+            <p><span style="color:  RGB(223, 1, 0);">Victor M. Daet Construction & Supply </span>is owned and managed by Engr. Victor M. Daet when it was established on March 21, 1991 and was issued a contractors PCAB license no.  15621 on October 2, 1992. 
+                <span style="color:  RGB(223, 1, 0);">VMD Construction and Supply </span>has been a trusted name in the construction industry for over two decades. We specialize in delivering top-notch construction services that meet and exceed our clients' expectations. Our team of skilled professionals is dedicated to ensuring the highest quality of workmanship and customer satisfaction.</p>
+        </div>
+    </section>
+
+    <section class="mission-vision-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mission">
+                    <h3>Our <span style="color: RGB(223, 1, 0)">Mission<span></h3>
+                    <p>We aim to be a diversified enterprise, principally engaged in the construction, providing cost-effective processes, products and services of superior quality, extending meaningful employment and better quality
+                        of life to our employess, delivering reasonable returns to our clients, and serving the welfare of  the community at large <br> <br>
+                        We will conduct our business with utmost professionalism; commit ourselves to total quality with never-ending improvements in our services to satisfy our customer.
+                         We will be a company to which each and every employee will be proud to belong
+                    </p>
+                </div>
+                <div class="col-md-6 vision">
+                    <h3>Our <span style="color: RGB(223, 1, 0)">Vision<span></h3>
+                    <p>We will be a prestigious organization with professional operations and a partner in nation building, guided by the highest standards of competnece, integrity and excellence. <br> <br>
+                    We will build finest project in the Philippines with the tradition of excellence, integrity, hard work, strenght through a trust worthy relationship with business partners and clients.
+                    </p>    
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container mt-5">
+        <h2 class="text-center mb-5 core-title"><strong>Our <span style="color: RGB(223, 1, 0)">Core Team</span></strong></h2>
+        <div class="row">
+            <div class="col-md-4 text-center team-member">
+                <img src="../images/team1.jpg" alt="Team Member 1" class="img-fluid">
+                <div class="hover-title">CEO</div>
+                <h4>John Doe</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="col-md-4 text-center team-member">
+                <img src="../images/team1.jpg" alt="Team Member 2" class="img-fluid">
+                <div class="hover-title">CTO</div>
+                <h4>Jane Smith</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="col-md-4 text-center team-member">
+                <img src="../images/team1.jpg" alt="Team Member 3" class="img-fluid">
+                <div class="hover-title">COO</div>
+                <h4>Robert Brown</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 text-center team-member">
+                <img src="../images/team1.jpg" alt="Team Member 4" class="img-fluid">
+                <div class="hover-title">CFO</div>
+                <h4>Emily Johnson</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="col-md-4 text-center team-member">
+                <img src="../images/team1.jpg" alt="Team Member 5" class="img-fluid">
+                <div class="hover-title">CMO</div>
+                <h4>Michael Lee</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="col-md-4 text-center team-member">
+                <img src="../images/team1.jpg" alt="Team Member 6" class="img-fluid">
+                <div class="hover-title">HR Manager</div>
+                <h4>Linda Williams</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>
+                        <span style="color: white;"><i class="fas fa-location-arrow"></i></span><a href="contactus.php">
+                        184-186 Maysan Road, Maysan,<br> Valenzuela City</a><br>
+                        <span style="color: blue;"><i class="fas fa-phone"></i></span>
+                        Phone: +02 84 0482 91 | Mobile Number: +63 960 6543 588 <br>
+                        <span style="color: RGB(223, 1, 0)"><i class="fas fa-envelope"></i></span>
+                        Email: <a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=vmd.hrdep@gmail.com&tf=1" target="_blank">vmd.hrdep@gmail.com</a>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61561906963834" target="_blank"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Explore our other official website</h5>
+                    <p> Click the link below:</p>
+                    <p><a href="http://localhost/Gravelandsand/" target="_blank">Maysan Providence Grave and Sand</a></p>
+        </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTopBtn"><i class="fas fa-arrow-up"></i></button>
+
+
+<!-- Font Awesome JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+<!-- Bootstrap JS and jQuery (for navbar toggle and carousel) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

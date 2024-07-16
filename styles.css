@@ -1,0 +1,222 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x:hidden;
+   
+}
+/* home */
+.carousel-item img {
+    width: auto;
+    height: 50rem;
+    padding: 12px;
+    border-radius: 8px;
+}
+.text-content {
+    line-height: 2; /* Adjust line height as needed */
+    
+}
+.text-upper-center{
+    background-color: rgb(235, 235, 235);
+    line-height: 2;
+}
+.text-center{
+    font-size: 20px;
+}
+.hover-effect img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+}
+
+.hover-effect img:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* about us */
+
+
+/* contact us */
+.custom-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Card Styling */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+/* Table Styling */
+.custom-table {
+    margin-top: 1rem;
+}
+
+.custom-table th,
+.custom-table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.thead-dark th {
+    background-color: #343a40;
+    color: #fff;
+}
+
+/* Form Styling */
+.custom-form {
+    margin-top: 1rem;
+}
+
+.custom-form .form-group {
+    margin-bottom: 1rem;
+}
+
+.custom-input,
+.custom-textarea {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.custom-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+    background-color: #0056b3;
+}
+
+/* header */
+.company-name {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px !important;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.navbar-custom {
+    background-color: RGB(255, 226, 44); /* Set your desired background color */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+}
+
+.company-name {
+    font-size: 1.2rem; /* Adjust the font size */
+    font-weight: bold; /* Optionally make it bold */
+    margin-left: 10px; /* Adjust spacing from the logo */
+}
+
+.navbar-nav .nav-link {
+    color: #333333; /* Set link color */
+    font-weight: bold; /* Optionally make links bold */
+    margin-right: 15px; /* Adjust spacing between links */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+/* social Media */
+.navbar-text {
+    font-size: 1rem; /* Adjust text size */
+}
+
+.navbar-text a {
+    color: #555555; /* Set color for email and social links */
+}
+
+.navbar-text a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.navbar-text .ml-3,
+.navbar-text .mr-3 {
+    color: #ccc; /* Set color for separator */
+}
+/* get in touch */
+.btn-get-in-touch {
+    background-color: RGB(223, 1, 0);
+    color: white;
+    border-radius: 50px;
+    padding: 5px 20px;
+    margin-right: 50px;
+}
+.btn-get-in-touch:hover {
+    color: black;
+    background-color:  RGB(255, 226, 44);
+    border-color: #333;
+   
+}
+
+.contact-info {
+    font-size: 20px; /* Adjust size as needed */
+    margin: 0;
+    font-weight: 800;
+}
+/* footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+}
+.footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+}
+.footer .col {
+    width: 30%;
+    margin-bottom: 20px;
+}
+.footer h5 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 5px;
+}
+.footer p {
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1.6;
+}
+.social-icons a {
+    color: #fff;
+    font-size: 24px;
+    margin-right: 15px;
+}
+.social-icons a:hover {
+    color: #007bff;
+}
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    background-color: rgb(223, 1, 0);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 40%;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
